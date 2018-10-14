@@ -1,0 +1,316 @@
+2018-10-15 00:37:51,762 - service - INFO - Initialize Wallet
+2018-10-15 00:37:51,763 - wallet - INFO - Load wallet configuration
+2018-10-15 00:37:51,763 - wallet - INFO - Configuration file sections :['TRANSACTION']
+2018-10-15 00:37:51,764 - wallet - INFO - Max allowed value 10000
+2018-10-15 00:37:51,764 - wallet - INFO - Datasource type : file
+2018-10-15 00:37:51,764 - wallet - INFO - Load wallet data from the file: data.json
+2018-10-15 00:37:51,765 - wallet - DEBUG - {'user0001': 150, 'user0002': 250, 'user0003': 200, 'user0004': 400, 'user0005': 10100}
+2018-10-15 00:37:51,765 - service - INFO - Create request queue
+2018-10-15 00:37:51,766 - service - INFO - Start request processing
+2018-10-15 00:37:51,766 - service - INFO - Get request from queue
+2018-10-15 00:38:06,012 - service - INFO - Put request UID : client0001
+        TIMESTAMP : 2018-10-15 00:37:54.916710
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0001', 'to': 'user0002', 'value': 50} to queue
+2018-10-15 00:38:06,013 - service - INFO - Request to process: UID : client0001
+        TIMESTAMP : 2018-10-15 00:37:54.916710
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0001', 'to': 'user0002', 'value': 50}
+2018-10-15 00:38:06,013 - wallet - INFO - Start transaction
+2018-10-15 00:38:06,013 - wallet - INFO - Transaction success
+2018-10-15 00:38:06,014 - wallet - DEBUG - {'user0001': 100, 'user0002': 300, 'user0003': 200, 'user0004': 400, 'user0005': 10100}
+2018-10-15 00:38:06,014 - service - INFO - UID : client0001
+        TIMESTAMP : 2018-10-15 00:38:06.014112
+        TYPE : ResponseType.NONE
+        BODY : {}
+2018-10-15 00:38:24,150 - service - INFO - Put request UID : client0001
+        TIMESTAMP : 2018-10-15 00:38:12.932730
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0001', 'to': 'user0002', 'value': 300} to queue
+2018-10-15 00:38:24,151 - service - INFO - Start request processing
+2018-10-15 00:38:24,151 - service - INFO - Get request from queue
+2018-10-15 00:38:24,151 - service - INFO - Request to process: UID : client0001
+        TIMESTAMP : 2018-10-15 00:38:12.932730
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0001', 'to': 'user0002', 'value': 300}
+2018-10-15 00:38:24,152 - wallet - INFO - Start transaction
+2018-10-15 00:38:24,152 - wallet - INFO - Unable to perform transaction: insufficient funds
+2018-10-15 00:38:24,152 - wallet - DEBUG - Available: 100, required: 300
+2018-10-15 00:38:24,152 - service - INFO - UID : client0001
+        TIMESTAMP : 2018-10-15 00:38:24.152214
+        TYPE : ResponseType.NONE
+        BODY : {}
+2018-10-15 00:38:39,172 - service - INFO - Put request UID : client0001
+        TIMESTAMP : 2018-10-15 00:38:26.899050
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0002', 'to': 'user0005', 'value': 20} to queue
+2018-10-15 00:38:39,172 - service - INFO - Start request processing
+2018-10-15 00:38:39,173 - service - INFO - Get request from queue
+2018-10-15 00:38:39,173 - service - INFO - Request to process: UID : client0001
+        TIMESTAMP : 2018-10-15 00:38:26.899050
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0002', 'to': 'user0005', 'value': 20}
+2018-10-15 00:38:39,173 - wallet - INFO - Start transaction
+2018-10-15 00:38:39,173 - wallet - INFO - Unable to perform transaction: max funds limit exceeded
+2018-10-15 00:38:39,174 - wallet - DEBUG - Available: 10100, max: 10000
+2018-10-15 00:38:39,174 - service - INFO - UID : client0001
+        TIMESTAMP : 2018-10-15 00:38:39.174238
+        TYPE : ResponseType.NONE
+        BODY : {}
+2018-10-15 00:38:53,671 - service - INFO - Put request UID : client0001
+        TIMESTAMP : 2018-10-15 00:38:44.426745
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0004', 'to': 'user0001', 'value': 70} to queue
+2018-10-15 00:38:53,672 - service - INFO - Start request processing
+2018-10-15 00:38:53,673 - service - INFO - Get request from queue
+2018-10-15 00:38:53,673 - service - INFO - Request to process: UID : client0001
+        TIMESTAMP : 2018-10-15 00:38:44.426745
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0004', 'to': 'user0001', 'value': 70}
+2018-10-15 00:38:53,707 - wallet - INFO - Start transaction
+2018-10-15 00:38:53,707 - wallet - INFO - Transaction success
+2018-10-15 00:38:53,707 - wallet - DEBUG - {'user0001': 170, 'user0002': 300, 'user0003': 200, 'user0004': 330, 'user0005': 10100}
+2018-10-15 00:38:53,707 - service - INFO - UID : client0001
+        TIMESTAMP : 2018-10-15 00:38:53.707937
+        TYPE : ResponseType.NONE
+        BODY : {}
+2018-10-15 00:39:00,159 - wallet - INFO - Store data to the file: data.json
+2018-10-15 00:42:04,391 - service - INFO - Initialize Wallet
+2018-10-15 00:42:04,391 - wallet - INFO - Load wallet configuration
+2018-10-15 00:42:04,392 - wallet - INFO - Configuration file sections :['TRANSACTION']
+2018-10-15 00:42:04,393 - wallet - INFO - Max allowed value 10000
+2018-10-15 00:42:04,393 - wallet - INFO - Datasource type : file
+2018-10-15 00:42:04,393 - wallet - INFO - Load wallet data from the file: data.json
+2018-10-15 00:42:04,393 - wallet - DEBUG - {'user0001': 170, 'user0002': 300, 'user0003': 200, 'user0004': 330, 'user0005': 10100}
+2018-10-15 00:42:04,394 - service - INFO - Create request queue
+2018-10-15 00:42:04,395 - service - INFO - Start request processing
+2018-10-15 00:42:04,395 - service - INFO - Get request from queue
+2018-10-15 00:42:21,418 - service - INFO - Put request UID : client0001
+        TIMESTAMP : 2018-10-15 00:42:13.238069
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0001', 'to': 'user0002', 'value': 10} to queue
+2018-10-15 00:42:21,419 - service - INFO - Request to process: UID : client0001
+        TIMESTAMP : 2018-10-15 00:42:13.238069
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0001', 'to': 'user0002', 'value': 10}
+2018-10-15 00:42:21,419 - wallet - INFO - Start transaction
+2018-10-15 00:42:21,419 - wallet - INFO - Transaction success
+2018-10-15 00:42:21,419 - wallet - DEBUG - {'user0001': 160, 'user0002': 310, 'user0003': 200, 'user0004': 330, 'user0005': 10100}
+2018-10-15 00:42:21,420 - service - INFO - UID : client0001
+        TIMESTAMP : 2018-10-15 00:42:21.420529
+        TYPE : ResponseType.NONE
+        BODY : {}
+2018-10-15 00:42:43,820 - service - INFO - Put request UID : client0001
+        TIMESTAMP : 2018-10-15 00:42:34.992587
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0001', 'to': 'user0003', 'value': 40} to queue
+2018-10-15 00:42:43,821 - service - INFO - Start request processing
+2018-10-15 00:42:43,821 - service - INFO - Get request from queue
+2018-10-15 00:42:43,822 - service - INFO - Request to process: UID : client0001
+        TIMESTAMP : 2018-10-15 00:42:34.992587
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0001', 'to': 'user0003', 'value': 40}
+2018-10-15 00:42:43,822 - wallet - INFO - Start transaction
+2018-10-15 00:42:43,822 - wallet - INFO - Transaction success
+2018-10-15 00:42:43,822 - wallet - DEBUG - {'user0001': 120, 'user0002': 310, 'user0003': 240, 'user0004': 330, 'user0005': 10100}
+2018-10-15 00:42:43,823 - service - INFO - UID : client0001
+        TIMESTAMP : 2018-10-15 00:42:43.823479
+        TYPE : ResponseType.NONE
+        BODY : {}
+2018-10-15 00:42:57,699 - service - INFO - Initialize Wallet
+2018-10-15 00:42:57,699 - wallet - INFO - Load wallet configuration
+2018-10-15 00:42:57,700 - wallet - INFO - Configuration file sections :['TRANSACTION']
+2018-10-15 00:42:57,700 - wallet - INFO - Max allowed value 10000
+2018-10-15 00:42:57,700 - wallet - INFO - Datasource type : file
+2018-10-15 00:42:57,701 - wallet - INFO - Load wallet data from the file: data.json
+2018-10-15 00:42:57,701 - wallet - DEBUG - {'user0001': 170, 'user0002': 300, 'user0003': 200, 'user0004': 330, 'user0005': 10100}
+2018-10-15 00:42:57,701 - service - INFO - Create request queue
+2018-10-15 00:42:57,703 - service - INFO - Start request processing
+2018-10-15 00:42:57,703 - service - INFO - Get request from queue
+2018-10-15 00:43:11,637 - service - INFO - Put request UID : client0001
+        TIMESTAMP : 2018-10-15 00:42:59.602004
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user00101', 'to': 'user0003', 'value': 20} to queue
+2018-10-15 00:43:11,638 - service - INFO - Request to process: UID : client0001
+        TIMESTAMP : 2018-10-15 00:42:59.602004
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user00101', 'to': 'user0003', 'value': 20}
+2018-10-15 00:43:11,638 - wallet - INFO - Start transaction
+2018-10-15 00:43:30,138 - service - INFO - Put request UID : client0001
+        TIMESTAMP : 2018-10-15 00:43:21.239444
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0001', 'to': 'user0003', 'value': 5} to queue
+2018-10-15 00:43:47,321 - service - INFO - Put request UID : client0001
+        TIMESTAMP : 2018-10-15 00:43:40.051997
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0004', 'to': 'user0002', 'value': 100} to queue
+2018-10-15 00:48:27,961 - service - INFO - Initialize Wallet
+2018-10-15 00:48:27,961 - wallet - INFO - Load wallet configuration
+2018-10-15 00:48:27,962 - wallet - INFO - Configuration file sections :['TRANSACTION']
+2018-10-15 00:48:27,962 - wallet - INFO - Max allowed value 10000
+2018-10-15 00:48:27,963 - wallet - INFO - Datasource type : file
+2018-10-15 00:48:27,963 - wallet - INFO - Load wallet data from the file: data.json
+2018-10-15 00:48:27,964 - wallet - DEBUG - {'user0001': 170, 'user0002': 300, 'user0003': 200, 'user0004': 330, 'user0005': 10100}
+2018-10-15 00:48:27,964 - service - INFO - Create request queue
+2018-10-15 00:48:27,965 - service - INFO - Start request processing
+2018-10-15 00:48:27,966 - service - INFO - Get request from queue
+2018-10-15 00:48:41,314 - service - INFO - Put request UID : client0001
+        TIMESTAMP : 2018-10-15 00:48:33.466773
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0001', 'to': 'user0002', 'value': 10} to queue
+2018-10-15 00:48:41,314 - service - INFO - Request to process: UID : client0001
+        TIMESTAMP : 2018-10-15 00:48:33.466773
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0001', 'to': 'user0002', 'value': 10}
+2018-10-15 00:48:41,315 - wallet - INFO - Start transaction
+2018-10-15 00:48:41,315 - wallet - INFO - Transaction success
+2018-10-15 00:48:41,315 - wallet - DEBUG - {'user0001': 160, 'user0002': 310, 'user0003': 200, 'user0004': 330, 'user0005': 10100}
+2018-10-15 00:48:41,316 - service - INFO - UID : client0001
+        TIMESTAMP : 2018-10-15 00:48:41.316009
+        TYPE : ResponseType.NONE
+        BODY : {}
+2018-10-15 00:48:54,969 - service - INFO - Put request UID : client0001
+        TIMESTAMP : 2018-10-15 00:48:46.775654
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0002', 'to': 'user0003', 'value': 20} to queue
+2018-10-15 00:48:54,969 - service - INFO - Start request processing
+2018-10-15 00:48:54,969 - service - INFO - Get request from queue
+2018-10-15 00:48:54,970 - service - INFO - Request to process: UID : client0001
+        TIMESTAMP : 2018-10-15 00:48:46.775654
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0002', 'to': 'user0003', 'value': 20}
+2018-10-15 00:48:54,970 - wallet - INFO - Start transaction
+2018-10-15 00:48:54,970 - wallet - INFO - Transaction success
+2018-10-15 00:48:54,970 - wallet - DEBUG - {'user0001': 160, 'user0002': 290, 'user0003': 220, 'user0004': 330, 'user0005': 10100}
+2018-10-15 00:48:54,971 - service - INFO - UID : client0001
+        TIMESTAMP : 2018-10-15 00:48:54.971124
+        TYPE : ResponseType.NONE
+        BODY : {}
+2018-10-15 00:49:58,375 - service - INFO - Initialize Wallet
+2018-10-15 00:49:58,376 - wallet - INFO - Load wallet configuration
+2018-10-15 00:49:58,377 - wallet - INFO - Configuration file sections :['TRANSACTION']
+2018-10-15 00:49:58,377 - wallet - INFO - Max allowed value 10000
+2018-10-15 00:49:58,377 - wallet - INFO - Datasource type : file
+2018-10-15 00:49:58,377 - wallet - INFO - Load wallet data from the file: data.json
+2018-10-15 00:49:58,378 - wallet - DEBUG - {'user0001': 170, 'user0002': 300, 'user0003': 200, 'user0004': 330, 'user0005': 10100}
+2018-10-15 00:49:58,378 - service - INFO - Create request queue
+2018-10-15 00:49:58,379 - service - INFO - Start request processing
+2018-10-15 00:49:58,380 - service - INFO - Get request from queue
+2018-10-15 00:50:12,054 - service - INFO - Put request UID : client0001
+        TIMESTAMP : 2018-10-15 00:50:03.612922
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0003', 'to': 'user0004', 'value': 10} to queue
+2018-10-15 00:50:12,054 - service - INFO - Request to process: UID : client0001
+        TIMESTAMP : 2018-10-15 00:50:03.612922
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0003', 'to': 'user0004', 'value': 10}
+2018-10-15 00:50:12,054 - wallet - INFO - Start transaction
+2018-10-15 00:50:12,055 - wallet - INFO - Transaction success
+2018-10-15 00:50:12,055 - wallet - DEBUG - {'user0001': 170, 'user0002': 300, 'user0003': 190, 'user0004': 340, 'user0005': 10100}
+2018-10-15 00:50:12,055 - service - INFO - UID : client0001
+        TIMESTAMP : 2018-10-15 00:50:12.055554
+        TYPE : ResponseType.NONE
+        BODY : {}
+2018-10-15 00:50:21,998 - wallet - INFO - Store data to the file: data.json
+2018-10-15 01:13:49,712 - gateway - INFO - Initialize Service
+2018-10-15 01:13:49,712 - service - INFO - Initialize Wallet
+2018-10-15 01:13:49,712 - wallet - INFO - Load wallet configuration
+2018-10-15 01:13:49,713 - wallet - INFO - Configuration file sections :['TRANSACTION']
+2018-10-15 01:13:49,713 - wallet - INFO - Max allowed value 10000
+2018-10-15 01:13:49,714 - wallet - INFO - Datasource type : file
+2018-10-15 01:13:49,714 - wallet - INFO - Load wallet data from the file: data.json
+2018-10-15 01:13:49,715 - wallet - DEBUG - {'user0001': 170, 'user0002': 300, 'user0003': 190, 'user0004': 340, 'user0005': 10100}
+2018-10-15 01:13:49,715 - service - INFO - Create request queue
+2018-10-15 01:13:49,715 - gateway - DEBUG - Initialize wallet thread
+2018-10-15 01:13:49,715 - gateway - INFO - Gateway client id client0001
+2018-10-15 01:13:49,716 - gateway - DEBUG - Start wallet thread
+2018-10-15 01:13:49,717 - service - INFO - Start request processing
+2018-10-15 01:13:49,717 - service - INFO - Get request from queue
+2018-10-15 01:13:52,569 - gateway - INFO - Start transaction data input
+2018-10-15 01:14:00,897 - gateway - INFO - Transaction request: UID : client0001
+        TIMESTAMP : 2018-10-15 01:13:52.570610
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0001', 'to': 'user0005', 'value': 20}
+2018-10-15 01:14:00,897 - service - INFO - Put request UID : client0001
+        TIMESTAMP : 2018-10-15 01:13:52.570610
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0001', 'to': 'user0005', 'value': 20} to queue
+2018-10-15 01:14:00,898 - service - INFO - Request to process: UID : client0001
+        TIMESTAMP : 2018-10-15 01:13:52.570610
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0001', 'to': 'user0005', 'value': 20}
+2018-10-15 01:14:00,898 - wallet - INFO - Start transaction
+2018-10-15 01:14:00,898 - wallet - INFO - Unable to perform transaction: max funds limit exceeded
+2018-10-15 01:14:00,898 - wallet - DEBUG - Available: 10100, max: 10000
+2018-10-15 01:14:00,899 - service - INFO - UID : client0001
+        TIMESTAMP : 2018-10-15 01:14:00.899167
+        TYPE : ResponseType.NONE
+        BODY : {}
+2018-10-15 01:14:08,395 - gateway - INFO - Start transaction data input
+2018-10-15 01:14:16,782 - gateway - INFO - Transaction request: UID : client0001
+        TIMESTAMP : 2018-10-15 01:14:08.395167
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0005', 'to': 'user0001', 'value': 500}
+2018-10-15 01:14:16,782 - service - INFO - Put request UID : client0001
+        TIMESTAMP : 2018-10-15 01:14:08.395167
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0005', 'to': 'user0001', 'value': 500} to queue
+2018-10-15 01:14:16,783 - service - INFO - Start request processing
+2018-10-15 01:14:16,783 - service - INFO - Get request from queue
+2018-10-15 01:14:16,783 - service - INFO - Request to process: UID : client0001
+        TIMESTAMP : 2018-10-15 01:14:08.395167
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0005', 'to': 'user0001', 'value': 500}
+2018-10-15 01:14:16,784 - wallet - INFO - Start transaction
+2018-10-15 01:14:16,784 - wallet - INFO - Transaction success
+2018-10-15 01:14:16,785 - wallet - DEBUG - {'user0001': 670, 'user0002': 300, 'user0003': 190, 'user0004': 340, 'user0005': 9600}
+2018-10-15 01:14:16,786 - service - INFO - UID : client0001
+        TIMESTAMP : 2018-10-15 01:14:16.786767
+        TYPE : ResponseType.NONE
+        BODY : {}
+2018-10-15 01:14:37,837 - gateway - INFO - Start transaction data input
+2018-10-15 01:14:50,124 - gateway - INFO - Transaction request: UID : client0001
+        TIMESTAMP : 2018-10-15 01:14:37.838813
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0001', 'to': 'user0005', 'value': 490}
+2018-10-15 01:14:50,124 - service - INFO - Put request UID : client0001
+        TIMESTAMP : 2018-10-15 01:14:37.838813
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0001', 'to': 'user0005', 'value': 490} to queue
+2018-10-15 01:14:50,125 - service - INFO - Start request processing
+2018-10-15 01:14:50,125 - service - INFO - Get request from queue
+2018-10-15 01:14:50,125 - service - INFO - Request to process: UID : client0001
+        TIMESTAMP : 2018-10-15 01:14:37.838813
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0001', 'to': 'user0005', 'value': 490}
+2018-10-15 01:14:50,126 - wallet - INFO - Start transaction
+2018-10-15 01:14:50,126 - wallet - INFO - Transaction success
+2018-10-15 01:14:50,126 - wallet - DEBUG - {'user0001': 180, 'user0002': 300, 'user0003': 190, 'user0004': 340, 'user0005': 10090}
+2018-10-15 01:14:50,127 - service - INFO - UID : client0001
+        TIMESTAMP : 2018-10-15 01:14:50.127015
+        TYPE : ResponseType.NONE
+        BODY : {}
+2018-10-15 01:14:56,951 - gateway - INFO - Start transaction data input
+2018-10-15 01:15:08,359 - gateway - INFO - Transaction request: UID : client0001
+        TIMESTAMP : 2018-10-15 01:14:56.951566
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0003', 'to': 'user0001', 'value': 700}
+2018-10-15 01:15:08,359 - service - INFO - Put request UID : client0001
+        TIMESTAMP : 2018-10-15 01:14:56.951566
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0003', 'to': 'user0001', 'value': 700} to queue
+2018-10-15 01:15:08,360 - service - INFO - Start request processing
+2018-10-15 01:15:08,360 - service - INFO - Get request from queue
+2018-10-15 01:15:08,360 - service - INFO - Request to process: UID : client0001
+        TIMESTAMP : 2018-10-15 01:14:56.951566
+        TYPE : RequestType.TRANSACTION
+        BODY : {'from': 'user0003', 'to': 'user0001', 'value': 700}
+2018-10-15 01:15:08,360 - wallet - INFO - Start transaction
+2018-10-15 01:15:08,361 - wallet - INFO - Unable to perform transaction: insufficient funds
+2018-10-15 01:15:08,361 - wallet - DEBUG - Available: 190, required: 700
+2018-10-15 01:15:08,361 - service - INFO - UID : client0001
+        TIMESTAMP : 2018-10-15 01:15:08.361181
+        TYPE : ResponseType.NONE
+        BODY : {}
+2018-10-15 01:15:13,084 - wallet - INFO - Store data to the file: data.json
+2018-10-15 01:15:13,094 - gateway - DEBUG - Wait for thread to join
